@@ -13,6 +13,7 @@ jobs:
 
     env:
       BROWSER: chrome
+      TARGET: remote
 
     steps:
     - uses: actions/checkout@v3
@@ -23,4 +24,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -DargLine=-Dbrowser=$BROWSER
+      run: mvn -B package --file pom.xml -DargLine="-Dbrowser=$BROWSER -Dtarget=$TARGET"
