@@ -4,7 +4,7 @@ Feature: Buy the product using productName
    Background: Navigate to Login page for Admin
      
    @Regression
-   Scenario Outline: Experience on buy the product
+   Scenario Outline: Purchase the product
     Given User navigate to Login Page for Admin "www-stagem3.fredperry.com" with username "fredperry" and password "staging"
    
       When click on Shopping in the UK section.
@@ -63,7 +63,7 @@ Feature: Buy the product using productName
       
       
               @Dataproviderusingexcel
-   Scenario Outline: Experience on buy the product
+   Scenario Outline: product selection
     Given User navigate to Login Page for Admin "www-stagem3.fredperry.com" with username "fredperry" and password "staging"
    
       When click on Shopping in the UK section.
@@ -81,7 +81,7 @@ Feature: Buy the product using productName
           
           
      @Sanity
-   Scenario Outline: checking the sanity testing
+   Scenario Outline: sanity testing
     Given User navigate to Login Page for Admin "www-stagem3.fredperry.com" with username "fredperry" and password "staging"
    
       When click on Shopping in the UK section.
